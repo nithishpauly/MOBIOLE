@@ -1,0 +1,62 @@
+.App {
+    text-align: center;
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    color:black;
+    background-image: url(mobile-recharge-software.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    
+    
+}
+  
+  .auth-form-container, .login-form, .register-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  @media screen and (min-width: 600px) {
+    .auth-form-container {
+      padding: 5rem;
+      border: 1px solid white;
+      border-radius: 10px;
+      margin: 0.5rem;
+      background: rgb(222,222,229);
+      background: radial-gradient(circle, rgba(222,222,229,0) 0%, rgba(243,245,246,1) 100%);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+    }
+  }
+  
+  label {
+    text-align: left;
+    padding: 0.25rem 0;
+  }
+  
+  input {
+    margin: 0.5rem 0;
+    padding: 1rem;
+    border: none;
+    border-radius: 10px;
+  }
+  
+  button {
+    border: none;
+    background: rgb(222,222,229);
+    background: radial-gradient(circle, rgba(222,222,229,0) 0%, rgb(33, 37, 40) 100%);
+    padding: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    color: black;
+  }
+  
+  .link-btn {
+    background: none;
+    color: rgb(61, 14, 163);
+    text-decoration: underline;
+  }
+  

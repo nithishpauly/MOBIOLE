@@ -1,0 +1,94 @@
+/* Add any additional styling you want for the SignUp component here */
+.login {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+  }
+  
+  .login h1 {
+    text-align: center;
+    color: #333;
+  }
+  
+  .login_form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .login_form .gogo {
+    margin-bottom: 15px;
+  }
+  
+  .login_form .gogo label {
+    font-size: 16px;
+    color: #333;
+    font-weight: 500;
+  }
+  
+  .login_form .gogo input[type="name"],
+  .login_form .gogo input[type="email"],
+  .login_form .gogo input[type="password"] {
+    width: 100%;
+    height: 40px;
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    background-color: #f9f9f9;
+  }
+  
+  .login_form .gogo input[type="name"]:focus,
+  .login_form .gogo input[type="email"]:focus,
+  .login_form .gogo input[type="password"]:focus {
+    outline: none;
+    border-color: #38a2f9;
+  }
+  
+  .login_form .error {
+    color: #dc3545;
+    font-size: 14px;
+    margin-top: 5px;
+  }
+  
+  .login_form .btn {
+    width: 100%;
+    height: 45px;
+    margin-top: 20px;
+    background-color: #38a2f9;
+    border: none;
+    border-radius: 6px;
+    font-size: 18px;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  .login_form .btn:hover {
+    background-color: #1c7adb;
+  }
+  
+  .login h2 {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 16px;
+    color: #333;
+  }
+  
+  .login h2 a {
+    color: #38a2f9;
+    text-decoration: none;
+  }
+  
+  .login h2 a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Responsive styles */
+  @media screen and (max-width: 480px) {
+    .login {
+      max-width: 100%;
+    }
+  }
+  

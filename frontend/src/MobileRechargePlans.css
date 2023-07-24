@@ -1,0 +1,180 @@
+/* Container for the whole component */
+h1 {
+  color: rgb(108, 42, 64);
+}
+
+.mobile-recharge-plans {
+  max-width: 600px;
+  margin: 0 auto;
+  backdrop-filter: blur(30px);
+  padding: 20px;
+}
+
+.bckimg {
+  background-image: url(th.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+/* Card-like layout for each plan */
+.plan-card {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 10px 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease; /* Add smooth transition for transform */
+}
+
+/* Plan name styling */
+.plan-name {
+  font-size: 24px;
+  color: #38a2f9;
+  margin: 0;
+}
+
+/* Plan description styling */
+.plan-description {
+  font-size: 16px;
+  color: #555;
+  margin: 10px 0;
+}
+
+/* Plan price styling */
+.plan-price {
+  font-size: 20px;
+  color: #333;
+  margin: 0;
+}
+
+/* Apply transform scale on hover to create a subtle animation */
+.plan-card:hover {
+  transform: scale(1.05); /* Slightly increase size on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Slideshow */
+#slideshow {
+  overflow: hidden;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 0.2cm;
+  position: relative;
+  height: 20cm;
+}
+
+.bod3 {
+  /* background-color: rgb(255, 173, 252); */
+  background-size: cover;
+  background-attachment: fixed;
+  width: 100%;
+  max-width: 1500px;
+  height: 500px;
+}
+
+.slide {
+  float: left;
+  height: 30cm;
+  width: 100%;
+  max-width: 1500px;
+}
+
+.slide-wrapper {
+  width: calc(100% * 7);
+  height: calc(1000px * 7);
+  animation: slide 30s ease infinite;
+}
+
+@keyframes slide {
+  /* Calculate the margin-left for
+  each of the slides */
+  10% {
+    margin-left: 0px;
+  }
+  20% {
+    margin-left: calc(-100% * 1);
+  }
+  30% {
+    margin-left: calc(-100% * 2);
+  }
+  40% {
+    margin-left: calc(-100% * 3);
+  }
+  50% {
+    margin-left: calc(-100% * 4);
+  }
+  60% {
+    margin-left: calc(-100% * 5);
+  }
+  70% {
+    margin-left: calc(-100% * 6);
+  }
+}
+
+.heig {
+  width: 100%;
+  max-width: 2cm;
+  height: 100%;
+  max-height: 6cm;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+  .mobile-recharge-plans {
+    padding: 10px;
+  }
+
+  .plan-card {
+    padding: 10px;
+  }
+
+  .plan-name {
+    font-size: 20px;
+  }
+
+  .plan-description {
+    font-size: 14px;
+  }
+
+  .plan-price {
+    font-size: 18px;
+  }
+
+  .bod3 {
+    height: 300px;
+  }
+
+  .slide {
+    height: 200px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .mobile-recharge-plans {
+    padding: 5px;
+  }
+
+  .plan-card {
+    padding: 5px;
+  }
+
+  .plan-name {
+    font-size: 18px;
+  }
+
+  .plan-description {
+    font-size: 12px;
+  }
+
+  .plan-price {
+    font-size: 16px;
+  }
+
+  .bod3 {
+    height: 200px;
+  }
+
+  .slide {
+    height: 150px;
+  }
+}

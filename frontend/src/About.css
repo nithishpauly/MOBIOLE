@@ -1,0 +1,62 @@
+/* Styles for all screen sizes */
+.hi {
+    background-image: url("de.jpeg");
+    color: rgb(196, 17, 187);
+    /* background-color: blue; */
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    background-repeat: no-repeat;
+    text-align: center;
+    font-family: "sans-serif";
+}
+
+.h1 {
+  text-align: center;
+  font-family: "sans-serif";
+}
+
+.p {
+    text-align: center;
+}
+
+.q {
+    color: rgb(16, 37, 158);
+}
+
+.w {
+    color: rgb(16, 158, 80);
+}
+
+.j {
+    
+}
+
+/* Responsive styles for screens smaller than 768px */
+@media (max-width: 767px) {
+  .hi {
+    /* Adjust height and other properties for mobile devices */
+    height: 100%;
+    background-size: contain;
+    background-position: center;
+    background-attachment: fixed;
+  }
+}
+
+/* Additional responsive styles for screens between 768px and 1023px */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .hi {
+    /* Modify styles for tablets and smaller devices */
+    font-size: 16px;
+    padding: 20px;
+  }
+}
+
+/* Additional responsive styles for screens larger than 1023px */
+@media (min-width: 1024px) {
+  .hi {
+    /* Adjust styles for desktop and larger screens */
+    font-size: 18px;
+    padding: 30px;
+  }
+}

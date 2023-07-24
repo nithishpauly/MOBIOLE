@@ -1,0 +1,5 @@
+com\example\demo\repo\repo.class
+com\example\demo\entity\entity.class
+com\example\demo\controller\controller.class
+com\example\demo\service\service.class
+com\example\demo\MobioleApplication.class
